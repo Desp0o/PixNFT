@@ -1,0 +1,753 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-snap-align: center;  
+}
+
+.no-scroll{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body{
+    
+    background-color: #fff;
+    
+    color:#0f0f0f;
+    letter-spacing: -0.2px;
+    font-family: 'Get Schwifty';
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+/*************************************************
+*********** მენU **********************
+**************************************************/
+.container{
+    position:absolute;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+.fixed-menu{
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+
+    position: fixed;
+    
+    background: hsla(0, 0.5%, 98%, 0.6);
+    backdrop-filter: blur(5px);
+
+    width: 100%;
+    height: 75px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.burger-menu{
+    position: relative;
+    z-index: 2;
+
+    width: 30px;
+    height: 25px;
+
+    padding: 0px 1px 0px 1px;
+
+    display: none;
+    cursor: pointer;
+}
+
+.burger-menu-list{
+    display: block;
+    position: absolute;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.burger-menu-list:nth-child(1){
+    top: 0;
+}
+
+.burger-menu-list:nth-child(2){
+    top: 50%;
+}
+
+.burger-menu-list:nth-child(3){
+    top: 100%;
+}
+
+.right-side{
+    font-size: 20px;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.left-side{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.left-side-list{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.left-side-list-items{
+    margin-right: 15px;
+
+    text-decoration: none;
+    color:#0f0f0f;
+    font-weight: 600;
+}
+
+#twitter-logo{
+    width: 30px;
+}
+
+#insta-logo{
+    width: 25px;
+}
+
+#opensea{
+    background-color: #0075EB;
+
+    color:#fff;
+
+    border-radius: 10px;
+    padding: 8px 10px;
+
+    transition: all 0.4s;
+}
+
+#opensea:hover{
+    background-color: #0259B1;
+}
+
+/*************************************************
+*********** მთავარი გვერდი **********************
+**************************************************/
+.container-header{
+    
+    width: 100%;
+    height: 100vh;
+}
+
+.main-content{
+    width: 100%;
+    text-align: center;
+    
+    margin-top: 200px;
+}
+
+.main-content-txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 550px;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-content-txt h1{
+    font-size: 90px;
+    font-weight: 700;
+}
+
+.main-content-txt p{
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+#opneseayellow{
+    background-color: yellow;
+    border-radius: 10px;
+
+    width:fit-content;
+
+    padding: 10px 25px;
+    margin-top: 50px;
+
+    text-decoration: none;
+    text-align: center;
+    color: #0f0f0f;
+    font-weight: 600;
+
+    transition: all 0.4;
+}
+
+#opneseayellow:hover{
+    background-color: #BBE600;
+}
+
+.mainc-content-images{
+    width: 100%;
+}
+
+.mainc-content-images img{
+    position: relative;
+    width: 300px;
+
+    border-radius: 10px;
+}
+
+#nft1{
+    position: relative;
+    z-index: -1;
+
+    display: flex;
+    justify-content: flex-start;
+
+    margin-top: -220px;
+    margin-left: 120px;
+
+    transform: rotate(10deg);
+
+    width: 100%;
+}
+
+#nft2{
+    position: relative;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    
+    transform: rotate(15deg);
+
+    margin-top: -700px;
+}
+
+#nft3{
+    position: relative;
+    z-index: -1;
+    display: flex;
+    justify-content: end;
+
+
+    transform: rotate(-15deg);
+}
+
+#nft4{
+    position: relative;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+
+    margin-top: 200px;
+    transform: rotate(9deg);
+}
+/*************************************************
+*********** ლურჯი კონტენტი **********************
+**************************************************/
+.container-blue-bg{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+
+    background-color: #0259B1;
+}
+
+.blue-bg-inner-left{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+
+    padding-left: 100px;
+    
+    width: 50%;
+
+    color: #fff;
+}
+
+.blue-bg-inner-left{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+
+    width: 50%;
+
+    text-align:start;
+}
+
+.blue-bg-inner-left h1{
+    font-size: 40px;
+
+    margin-bottom: 40px;
+}
+
+.blue-bg-inner-left p{
+    font-size: 18px;
+
+    margin-bottom: 40px;
+}
+
+.get-yours-now-btn{
+    text-decoration: none;
+    text-align: center;
+    color: #0f0f0f;
+    font-size: 18px;
+
+    background-color: yellow;
+    border-radius: 10px;
+
+    width: fit-content;
+
+    padding: 10px 20px;
+
+    transition: all 0.4s;
+}
+
+.get-yours-now-btn:hover{
+    background-color: #BBE600;
+}
+
+.blue-bg-inner-right{
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(5deg);
+}
+
+.blue-bg-inner-right img{
+    width: 60%;
+    height: auto;
+
+    border-radius: 10px;
+}
+
+/*************************************************
+*********** roadmap კონტენტი **********************
+**************************************************/
+.roadmap-content{
+    position: relative;
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: #DFEEFF;
+
+    display: flex;
+}
+
+.roadmap-left{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    
+}
+
+.roadmap-nft{
+    width: auto;
+    height: 40%;
+
+    border-radius: 10px;
+
+    position: sticky;
+    top: 175px;
+    bottom:0;
+
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+    border:1px solid #0f0f0f;
+}
+
+.roadmap-right{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: relative;
+    z-index: 50;
+}
+
+.roadmap-title{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.roadmap-txt{
+    font-size: 18px;
+
+    margin-top: 20px;
+}
+
+.roadmap-column{
+    display: flex;
+    flex-direction: column;
+    
+    width: 50%;
+
+    margin-top: 30px;
+}
+
+.roadmap-column-list{
+    margin-top: 30px;
+
+    background-color: #FFFFFF;
+    border-radius: 10px;
+
+    padding: 10px 20px;
+
+}
+
+/*************************************************
+*********** rarity კონტენტი **********************
+**************************************************/
+.container-rarity{
+    position: relative;
+
+    display: flex;
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: #fff;
+
+}
+
+.rarity-left{
+    width: 50%;
+    height: 100%;
+
+    padding-left: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+.rarity-title{
+    font-size: 30px;
+    font-weight: bold;
+
+    margin-bottom: 40px;
+}
+
+.rarity-txt{
+    font-size: 18px;
+}
+
+.rarity-right{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rarity-nft{
+    width: 50%;
+    height: auto;
+
+    border-radius: 10px;
+    border: 1px solid black;
+
+    transform: rotate(-2deg);
+}
+
+/*************************************************
+*********** creator კონტენტი **********************
+**************************************************/
+
+.creator-content{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+
+    background-color: #0259B1;
+}
+
+.creator-right{
+    width: 50%;
+    height: 100%;
+
+    padding-left: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.creator-nft{
+    width: 70%;
+    height: auto;
+
+    border-radius: 10px;
+
+    transform: rotate(2deg);
+}
+
+.creator-left{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.creator-title{
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+
+    margin-bottom: 40px;
+}
+
+.creator-txt{
+    font-size: 18px;
+    color: #fff;
+
+    padding-right: 10px;
+    margin-bottom: 40px;
+}
+
+.creator-btn-link{
+    text-decoration: none;
+    color: #0f0f0f;
+    font-size: 18px;
+
+    background-color: yellow;
+    border-radius: 10px;
+
+    padding: 10px 20px;
+
+    transition: all 0.4s;
+}
+
+.creator-btn-link:hover{
+    background-color: #BBE600;
+}
+
+/*************************************************
+*********** FAQ კონტენტი **********************
+**************************************************/
+.FAQ-content{
+    position: relative;
+
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.FAQ-title{
+    font-size: 25px;
+    text-align: center;
+}
+
+.question{
+    background-color: #F1F8FF;
+    border-radius: 10px;
+    
+    padding: 10px 20px;
+}
+
+.question h3{
+    margin-bottom: 10px;
+}
+
+.FAQ-list-items{
+    margin-bottom: 50px;
+}
+
+/*************************************************
+*********** get-your-nft კონტენტი **********************
+**************************************************/
+.Get-your-nft{
+    position: relative;
+
+    width: 100%;
+    height: 70vh;
+
+    background-color: #CFF800;
+
+    display: flex;
+}
+
+.Get-your-nft-left{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 100px;
+}
+
+.Get-your-nft-left-title{
+    font-size: 30px;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+.Get-your-nft-left-txt{
+    font-size: 18px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Get-your-nft-left-btn{
+    margin-top: 40px;
+    
+}
+
+.Get-your-nft-left-btn a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+
+    background-color: #0075EB;
+    border-radius: 10px;
+
+    padding: 10px 20px;
+
+    transition: all 0.4s;
+
+    width: fit-content;
+}
+
+.Get-your-nft-left-btn a:hover {
+    background-color: #0259B1;
+}
+
+.Get-your-nft-right{
+    width: 50%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Get-your-nft-img{
+    position: relative;
+    
+    width: 50%;
+    height: auto;
+
+    border-radius: 10px;
+    
+    transform: rotate(-2deg);
+}
+
+
+/*************************************************
+*********** footer კონტენტი **********************
+**************************************************/
+.footer{
+    position: relative;
+
+    width: 100%;
+    height: 40vh;
+}
+
+.footer-top-inner{
+    position: relative;
+
+    width: 100%;
+    height: 70%;
+
+    display: flex;
+}
+
+.footer-top-inner-left{
+    width: 90%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 100px;
+}
+
+.footer-top-inner-left-title{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer-top-inner-left-txt{
+    font-size: 18px;
+
+    margin-top: 20px;
+
+    letter-spacing: 0.1px;
+}
+
+.footer-top-inner-right{
+    width: 30%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-links{
+    text-decoration: none;
+    color: #0f0f0f;
+    font-weight: 500;
+}
+
+.footer-top-inner-right li{
+    list-style: none;
+
+    margin-top: 5px;
+}
+
+.footer-bottom-inner{
+    position: relative;
+
+    width: 100%;
+    height: 30%;
+
+    display: flex;
+
+    padding-left: 100px;
+}
+.footer-bottom-inner-left{
+    width: 70%;
+    height: 100%;
+}
+
+.footer-bottom-inner-left a{
+    color: #0075EB;
+}
+

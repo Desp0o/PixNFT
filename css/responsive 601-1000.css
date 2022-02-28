@@ -1,0 +1,246 @@
+@media (min-width:601px) and (max-width:1000px){
+
+    body{
+        width: 100vw;
+    }
+    
+    .fixed-menu{
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+    
+        position: fixed;
+        
+        background: hsla(0, 0.5%, 98%, 0.6);
+        backdrop-filter: blur(5px);
+    
+        width: 100vw;
+        height: 75px;
+    
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+       
+    .right-side{
+        font-size: 20px;
+        font-weight: bolder;
+        font-style: italic;
+    }
+    
+    .left-side{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .left-side-list{
+        display: flex;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .left-side-list-items{
+        margin-right: 15px;
+        
+        text-decoration: none;
+        color:#0f0f0f;
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    /******************* MAIN CONTENT *****************************/
+    .container-header{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .main-content{
+        width: 100vw;
+        text-align: center;
+    }
+
+    .main-content-txt p{
+        font-size: 50px;
+        
+    }
+
+    /******************* About CONTENT *****************************/
+    .container-blue-bg{
+        width: 100vw;
+        height: 100vh;
+    } 
+
+    .blue-bg-inner-left{
+        padding-left: 10px;
+     }
+
+     .blue-bg-inner-left p{
+        font-size: 30px;
+    } 
+
+    .blue-bg-inner-left h1{
+        font-size: 60px;
+    } 
+
+     .blue-bg-inner-right img{
+        width: 85%;
+        height: auto;
+    }
+
+    .get-yours-now-btn{
+        font-size: 28px;
+    }
+
+     /******************* Roadmap CONTENT *****************************/
+     .roadmap-content{
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .roadmap-nft{
+        width: auto;
+        height: 30%;
+
+        top: 175px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .roadmap-column{
+        width: 95%;
+        margin-top: 10px;
+    }
+
+    .roadmap-right h1{
+        font-size: 80px;
+    }
+
+    .roadmap-txt p{
+        font-size: 26px;
+    }
+
+    .roadmap-column p{
+        font-size: 28px;
+    }
+
+    /******************* Rarity CONTENT *****************************/
+    .container-rarity{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .rarity-left{
+        padding-left: 10px;
+    }
+
+    .rarity-nft{
+        width: 85%;
+    }
+
+    .rarity-title h1{
+        font-size: 80px;
+    }
+
+    .rarity-txt p{
+        font-size: 34px;
+    }
+
+    /******************* Creator CONTENT *****************************/
+    .creator-content{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .creator-right{
+        padding-left: 5px;
+    }
+
+    .creator-nft{
+        width: 85%;
+    }
+
+    .creator-title{
+        font-size: 48px;
+    }
+
+    .creator-txt p{
+        font-size: 34px;
+    }
+
+    .creator-btn-link{
+        font-size: 30px;
+
+        padding: 10px 20px;
+    }
+
+    /******************* Creator CONTENT *****************************/
+    .FAQ-content{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .FAQ-list-items h1{
+       font-size: 52px;
+    }
+
+    .FAQ-list-items h3{
+       font-size: 34px;
+    }  
+
+    .responsive-txt{
+        font-size: 32px;
+    }
+
+    /******************* GET NFT CONTENT *****************************/
+    .Get-your-nft{
+        width: 100vw;
+        height: 60vh;
+    }
+
+    .Get-your-nft-left{
+        padding-left: 10px;
+    }
+
+    .Get-your-nft-left-title h1{
+        font-size: 48px;
+    }
+
+    .Get-your-nft-left-txt p{
+        font-size: 34px;
+    }
+    .Get-your-nft-left-btn a{
+        font-size: 30px;
+    }
+
+    .Get-your-nft-img{
+        width: 85%;
+        height: auto;
+    }
+
+     /******************* GET NFT CONTENT *****************************/
+     .footer{
+        width: 100vw;
+        height: 40vh;
+    }
+
+    .footer-top-inner-left{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .footer-top-inner-left-title h1{
+        font-size: 36px;
+    }
+
+    .footer-top-inner-left-txt{
+        font-size: 24px;
+    }
+
+    .footer-bottom-inner{
+        padding-left: 2px;
+    }
+
+    .footer-links{
+        font-size: 20px;
+    }
+}
