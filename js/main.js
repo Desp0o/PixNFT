@@ -10,7 +10,6 @@ headerburger.onclick = function(){
 
 menu.onclick = function(){ 
     menu.classList.toggle('active');
-    
     headerburger.classList.toggle('active');
 } 
 
