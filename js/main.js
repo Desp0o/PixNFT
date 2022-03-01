@@ -13,6 +13,3 @@ menu.onclick = function(){
     headerburger.classList.toggle('active');
 } 
 
-window.onresize = function () {
-    location = location;
-}
