@@ -648,6 +648,8 @@ body{
 }
 
 .Get-your-nft-right{
+    position: relative;
+    
     width: 50%;
     height: 100%;
     

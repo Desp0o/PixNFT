@@ -61,7 +61,7 @@
     }
 
     .main-content-txt p{
-        font-size: 50px;
+        font-size: 20px;
         
     }
 
@@ -76,11 +76,11 @@
      }
 
      .blue-bg-inner-left p{
-        font-size: 30px;
+        font-size: 18px;
     } 
 
     .blue-bg-inner-left h1{
-        font-size: 60px;
+        font-size: 30px;
     } 
 
      .blue-bg-inner-right img{
@@ -89,7 +89,7 @@
     }
 
     .get-yours-now-btn{
-        font-size: 28px;
+        font-size: 18px;
     }
 
      /******************* Roadmap CONTENT *****************************/
@@ -113,15 +113,23 @@
     }
 
     .roadmap-right h1{
-        font-size: 80px;
+        font-size: 30px;
     }
 
     .roadmap-txt p{
-        font-size: 26px;
+        font-size: 18px;
     }
 
     .roadmap-column p{
-        font-size: 28px;
+        font-size: 18px;
+    }
+    
+    .roadmap-column{
+        margin-top: 5px;
+    }
+
+    .roadmap-column-list{
+        margin-top: 10px;
     }
 
     /******************* Rarity CONTENT *****************************/
@@ -139,11 +147,11 @@
     }
 
     .rarity-title h1{
-        font-size: 80px;
+        font-size: 30px;
     }
 
     .rarity-txt p{
-        font-size: 34px;
+        font-size: 18px;
     }
 
     /******************* Creator CONTENT *****************************/
@@ -161,35 +169,41 @@
     }
 
     .creator-title{
-        font-size: 48px;
+        font-size: 30px;
+
+        margin-bottom: 40px;
     }
 
     .creator-txt p{
-        font-size: 34px;
+        font-size: 18px;
     }
 
     .creator-btn-link{
-        font-size: 30px;
+        font-size: 18px;
 
         padding: 10px 20px;
     }
 
-    /******************* Creator CONTENT *****************************/
+    /******************* FAQ CONTENT *****************************/
     .FAQ-content{
         width: 100vw;
         height: 100vh;
     }
 
+    .FAQ-list-items{
+        margin-bottom: 20px;
+    }
+
     .FAQ-list-items h1{
-       font-size: 52px;
+       font-size: 30px;
     }
 
     .FAQ-list-items h3{
-       font-size: 34px;
+       font-size: 20px;
     }  
 
     .responsive-txt{
-        font-size: 32px;
+        font-size: 18px;
     }
 
     /******************* GET NFT CONTENT *****************************/
@@ -203,22 +217,22 @@
     }
 
     .Get-your-nft-left-title h1{
-        font-size: 48px;
-    }
-
-    .Get-your-nft-left-txt p{
-        font-size: 34px;
-    }
-    .Get-your-nft-left-btn a{
         font-size: 30px;
     }
 
+    .Get-your-nft-left-txt p{
+        font-size: 18px;
+    }
+    .Get-your-nft-left-btn a{
+        font-size: 18px;
+    }
+
     .Get-your-nft-img{
-        width: 85%;
+        width: 65%;
         height: auto;
     }
 
-     /******************* GET NFT CONTENT *****************************/
+     /******************* Footer CONTENT *****************************/
      .footer{
         width: 100vw;
         height: 40vh;
@@ -230,18 +244,18 @@
     }
 
     .footer-top-inner-left-title h1{
-        font-size: 36px;
+        font-size: 25px;
     }
 
     .footer-top-inner-left-txt{
-        font-size: 24px;
+        font-size: 16px;
     }
 
     .footer-bottom-inner{
-        padding-left: 2px;
+        padding-left: 10px;
     }
 
     .footer-links{
-        font-size: 20px;
+        font-size: 16px;
     }
 }
