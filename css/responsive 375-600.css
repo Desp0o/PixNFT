@@ -1,6 +1,7 @@
 @media (min-width: 376px) and (max-width:600px){
     body{
         width: 100vw;
+        overflow-x: hidden;
     }
  
     .no-scroll{
