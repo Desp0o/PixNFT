@@ -13,7 +13,7 @@
          height: 100%;
          width: 100vw;
  
-         left: -100%;
+         left: -200%;
          top: 0;
  
          background: hsla(0, 0.5%, 98%, 0.6);
@@ -115,15 +115,23 @@
 
     .roadmap-column{
         width: 95%;
-        margin-top: 5px;
+        margin-top: 3px;
     }
 
     .roadmap-column p{
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .roadmap-right h1{
-        font-size: 40px;
+        font-size: 30px;
+    }
+
+    .roadmap-txt p{
+        font-size: 16px;
+    }
+
+    .roadmap-column-list{
+        margin-top: 8px;
     }
 
     /******************* Rarity CONTENT *****************************/
@@ -179,12 +187,19 @@
      }
 
      .FAQ-title h1{
-        font-size: 32px;
+        font-size: 25px;
+        
      }
 
      .FAQ-list-items h3{
         font-size: 24px;
      }  
+
+     .FAQ-list-items p{
+         font-size: 16px;
+
+         margin-bottom:-30px;
+     }
 
      .responsive-txt{
          font-size: 22px;
@@ -201,11 +216,11 @@
     }
 
     .Get-your-nft-left-title h1{
-        font-size: 28px;
+        font-size: 26px;
     }
 
     .Get-your-nft-left-txt p{
-        font-size: 24px;
+        font-size: 18px;
     }
     .Get-your-nft-left-btn a{
         font-size: 20px;
