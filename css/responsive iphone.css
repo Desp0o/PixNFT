@@ -178,9 +178,17 @@
             width: 100vw;
             height: 100vh;
         }
-    
-        .FAQ-title{
-            font-size: 22px;
+        
+        .FAQ-title {
+            margin-bottom: -3px;
+        }
+
+        .FAQ-title h1{
+            font-size: 30px;
+        }
+
+        .FAQ-list-items{
+            margin-top: 15px;
         }
     
         /******************* GET YOUR NFT *****************************/
