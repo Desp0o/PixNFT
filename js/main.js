@@ -11,5 +11,6 @@ headerburger.onclick = function(){
 menu.onclick = function(){ 
     menu.classList.toggle('active');
     noscroll.classList.toggle('no-scroll');
+    headerburger.classList.toggle('active');
 } 
 
