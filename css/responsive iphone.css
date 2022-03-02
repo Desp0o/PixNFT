@@ -1,5 +1,9 @@
 @media (min-width:414px) and (max-width:415px){
 
+    html{
+        overflow-x: hidden;
+   }
+    
     body{
         width: 100vw;
         overflow-x: hidden;
