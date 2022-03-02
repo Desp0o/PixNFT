@@ -1,6 +1,8 @@
 @media (min-width:281px) and (max-width:375px){
    html{
         overflow-x: hidden;
+        scroll-behavior: smooth;
+        scroll-snap-align: center;
    }
    
     body{
