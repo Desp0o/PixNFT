@@ -28,6 +28,11 @@ body{
     overflow-x: hidden;
 }
 
+.darkclass{
+    background-color: #1B1B1B !important;
+    color: #DFEEFF !important;
+}
+
 /*************************************************
 *********** მენU **********************
 **************************************************/
@@ -53,6 +58,10 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.fixed-menu-dark{
+    background: rgba(61, 60, 60, 0.6) !important;
 }
 
 .burger-menu{
@@ -95,12 +104,14 @@ body{
     font-size: 20px;
     font-weight: bolder;
     font-style: italic;
+    margin-left: 50px;
 }
 
 .left-side{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    flex-basis: 60%;
 }
 
 .left-side-list{
@@ -115,6 +126,10 @@ body{
     text-decoration: none;
     color:#0f0f0f;
     font-weight: 600;
+}
+
+.left-side-list-items-dark{
+    color: white !important;
 }
 
 #twitter-logo{
@@ -140,6 +155,22 @@ body{
     background-color: #0259B1;
 }
 
+.opensea-dark{
+    background-color: #519872 !important;
+    color: #0f0f0f !important;
+}
+
+.opensea-dark:hover{
+    background-color: #2e6648 !important;
+}
+
+.dark-light{
+    flex-basis: 0.5%;
+}
+.mode-icon{
+    width: 30px;
+    cursor: pointer;
+}
 /*************************************************
 *********** მთავარი გვერდი **********************
 **************************************************/
@@ -192,6 +223,14 @@ body{
     font-weight: 600;
 
     transition: all 0.4;
+}
+
+.opneseapink{
+    background-color: #519872 !important;
+}
+
+.opneseapink:hover{
+    background-color: #2e6648 !important;
 }
 
 #opneseayellow:hover{
@@ -321,6 +360,14 @@ body{
     background-color: #BBE600;
 }
 
+.get-yours-now-btn-dark{
+    background-color: #519872 !important;
+}
+
+.get-yours-now-btn-dark:hover{
+    background-color: #2e6648 !important;
+}
+
 .blue-bg-inner-right{
     width: 50%;
 
@@ -408,6 +455,11 @@ body{
     margin-top: 30px;
 }
 
+.roadmap-column-list-dark{
+    background-color: #519872 !important;
+    color: #0f0f0f !important;
+}
+
 .roadmap-column-list{
     margin-top: 30px;
 
@@ -417,6 +469,8 @@ body{
     padding: 10px 20px;
 
 }
+
+
 
 /*************************************************
 *********** rarity კონტენტი **********************
@@ -550,6 +604,14 @@ body{
     background-color: #BBE600;
 }
 
+.creator-btn-link-dark{
+    background-color: #519872 !important;
+}
+
+.creator-btn-link-dark:hover{
+    background-color: #2e6648 !important;
+}
+
 /*************************************************
 *********** FAQ კონტენტი **********************
 **************************************************/
@@ -574,6 +636,11 @@ body{
     border-radius: 10px;
     
     padding: 10px 20px;
+}
+
+.question-dark{
+    background-color: #519872 !important;
+    color: #0f0f0f !important;
 }
 
 .question h3{
@@ -628,7 +695,7 @@ body{
     
 }
 
-.Get-your-nft-left-btn a{
+.Get-your-nft-left-btn-link{
     font-size: 18px;
     text-decoration: none;
     color: #fff;
@@ -643,8 +710,17 @@ body{
     width: fit-content;
 }
 
-.Get-your-nft-left-btn a:hover {
+.Get-your-nft-left-btn-link:hover {
     background-color: #0259B1;
+}
+
+.Get-your-nft-left-btn-link-dark{
+    background-color: #519872 !important;
+    color: #0f0f0f !important;
+}
+
+.Get-your-nft-left-btn-link-dark:hover{
+    background-color: #2e6648 !important;
 }
 
 .Get-your-nft-right{
@@ -726,6 +802,10 @@ body{
     text-decoration: none;
     color: #0f0f0f;
     font-weight: 500;
+}
+
+.footer-links-dark{
+    color: white !important;
 }
 
 .footer-top-inner-right li{
