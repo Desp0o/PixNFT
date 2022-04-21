@@ -115,7 +115,7 @@ body{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    flex-basis: 60%;
+    
 }
 
 .left-side-list{
