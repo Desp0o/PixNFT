@@ -57,13 +57,19 @@ $(".mode-icon").click(function(){
 });
 
 const img = document.getElementById('moon');
+const instaDark = document.getElementById('insta-logo');
+const twittDark = document.getElementById('twitter-logo');
 let toggleLogo = true;
 
 img.addEventListener('click', function(){
     toggleLogo= !toggleLogo;
     if(toggleLogo){
         img.src = '/images/day _mode.png';
+        instaDark.src = '/images/instagram.png';
+        twittDark.src = '/images/twitter.png'
     }else{
         img.src = '/images/night_mode.png';
+        instaDark.src = '/images/instagram_dark.png';
+        twittDark.src = '/images/twitter_dark.png';
     }
 });
