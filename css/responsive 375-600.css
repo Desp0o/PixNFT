@@ -9,6 +9,22 @@
         width: 100vw;
         overflow-x: hidden;
     }
+
+    .dark-header{
+        color: #519872;
+    }
+
+    .dark-light{
+        flex-basis: 0.5%;
+        margin-top: 50px;
+        margin-right: 20px;
+    }
+
+    .mode-icon{
+        width: 30px;
+        cursor: pointer;
+        transform: scale(1.5);
+    }
  
     .no-scroll{
      overflow-x: hidden;
@@ -45,8 +61,8 @@
          flex-direction: column;
          justify-content: flex-start;
  
-         transform: scale(2);
-         margin-top: 150px;
+         transform: scale(1.2);
+         margin-top: 50px;
      }
  
      .left-side-list-items{

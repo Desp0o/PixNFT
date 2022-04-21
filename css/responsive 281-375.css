@@ -13,12 +13,12 @@
    .dark-light{
     flex-basis: 0.5%;
     margin-top: 60px;
-    margin-right: 25px;
-}
+    margin-right: 15px;
+    }
     .mode-icon{
     width: 30px;
     cursor: pointer;
-    transform: scale(1.5);
+    transform: scale(1);
     }
 
    .no-scroll{
@@ -56,7 +56,7 @@
         flex-direction: column;
         justify-content: flex-start;
 
-        transform: scale(1.2);
+        transform: scale(1.3);
         margin-top: 80px;
     }
 

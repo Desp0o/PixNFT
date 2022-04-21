@@ -11,6 +11,22 @@
         overflow-x: hidden;
     }
 
+    .dark-header{
+        color: #519872;
+    }
+
+    .dark-light{
+        flex-basis: 0.5%;
+        margin-top: 60px;
+        margin-right: 25px;
+    }
+
+    .mode-icon{
+        width: 30px;
+        cursor: pointer;
+        transform: scale(1.5);
+    }
+
     .no-scroll{
         overflow-x: hidden;
         overflow-y: hidden;
