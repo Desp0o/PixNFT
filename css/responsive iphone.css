@@ -46,7 +46,7 @@
             flex-direction: column;
             justify-content: flex-start;
     
-            transform: scale(2);
+            transform: scale(z);
             margin-top: 150px;
         }
     

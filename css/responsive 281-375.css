@@ -10,6 +10,17 @@
        overflow-x: hidden;
    }
 
+   .dark-light{
+    flex-basis: 0.5%;
+    margin-top: 160px;
+    margin-right: 25px;
+}
+    .mode-icon{
+    width: 30px;
+    cursor: pointer;
+    transform: scale(1.5);
+    }
+
    .no-scroll{
     overflow-x: hidden;
     overflow-y: hidden;
@@ -73,6 +84,10 @@
    .container-header{
        width: 100vw;
        height: 100vh;
+   }
+
+   .dark-header{
+       color: #519872;
    }
 
    .mainc-content-images img{

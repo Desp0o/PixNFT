@@ -29,6 +29,12 @@ $(".mode-icon").click(function(){
     document.querySelector(".creator-btn-link").classList.toggle("creator-btn-link-dark");
     document.querySelector(".Get-your-nft-left-btn-link").classList.toggle("Get-your-nft-left-btn-link-dark");
     document.querySelector("#opensea").classList.toggle("opensea-dark");
+    document.querySelector(".main-content-txt h1").classList.toggle("dark-header");
+    document.querySelector(".main-content-txt p").classList.toggle("dark-header");
+
+    for(i=0; i<document.querySelectorAll(".burger-menu-list").length; i++){
+    document.querySelectorAll(".burger-menu-list")[i].classList.toggle("burger-menu-list-dark");
+    }
 
     for(i=0; i<document.querySelectorAll(".left-side-list-items").length; i++){
         document.querySelectorAll(".left-side-list-items")[i].classList.toggle("left-side-list-items-dark");
