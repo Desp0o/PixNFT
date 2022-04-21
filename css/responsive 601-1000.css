@@ -15,10 +15,10 @@
     }
     
 
-    .dark-light{
-        flex-basis: 0.5%;
+    .dark-light{    
         margin-top: 60px;
         margin-right: 25px;
+        margin-top: 0px;
     }
 
     .mode-icon{
@@ -46,7 +46,7 @@
     }
        
     .right-side{
-        font-size: 20px;
+        font-size: 2z0px;
         font-weight: bolder;
         font-style: italic;
     }

@@ -50,7 +50,7 @@ body{
     position: fixed;
     
     background: hsla(0, 0.5%, 98%, 0.6);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(8px);
 
     width: 100%;
     height: 75px;
@@ -153,6 +153,8 @@ body{
     padding: 8px 10px;
 
     transition: all 0.4s;
+
+    text-align: center;
 }
 
 #opensea:hover{
