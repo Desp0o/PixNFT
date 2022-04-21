@@ -169,10 +169,13 @@ body{
 }
 
 .dark-light{
-    flex-basis: 0.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
 }
 .mode-icon{
-    width: 30px;
+    width: 50px;
     cursor: pointer;
 }
 /*************************************************
