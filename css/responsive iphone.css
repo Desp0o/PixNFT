@@ -62,7 +62,7 @@
             flex-direction: column;
             justify-content: flex-start;
     
-            transform: scale(z);
+            transform: scale(1.5);
             margin-top: 150px;
         }
     
