@@ -64,12 +64,12 @@ let toggleLogo = true;
 img.addEventListener('click', function(){
     toggleLogo= !toggleLogo;
     if(toggleLogo){
-        img.src = '/images/day _mode.png';
-        instaDark.src = '/images/instagram.png';
-        twittDark.src = '/images/twitter.png'
+        img.src = './images/day _mode.png';
+        instaDark.src = './images/instagram.png';
+        twittDark.src = './images/twitter.png'
     }else{
-        img.src = '/images/night_mode.png';
-        instaDark.src = '/images/instagram_dark.png';
-        twittDark.src = '/images/twitter_dark.png';
+        img.src = './images/night_mode.png';
+        instaDark.src = './images/instagram_dark.png';
+        twittDark.src = './images/twitter_dark.png';
     }
 });
