@@ -8,7 +8,9 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-snap-align: center;  
+    scroll-snap-align: center; 
+    scroll-padding-top: 50px; 
+    overflow-x: hidden;
 }
 
 .no-scroll{
@@ -19,35 +21,25 @@ html {
 body{
     
     background-color: #fff;
-    
     color:#0f0f0f;
-    letter-spacing: -0.2px;
     
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
 }
 
-.darkclass{
-    background-color: #1B1B1B !important;
-    color: #DFEEFF !important;
-}
 
 /*************************************************
 *********** მენU **********************
 **************************************************/
-.container{
-    position:absolute;
-    width: 100%;
-    top: 0;
-    z-index: 999;
-}
 
 .fixed-menu{
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
 
     position: fixed;
+    z-index: 55;
+    top: 0;
     
     background: hsla(0, 0.5%, 98%, 0.6);
     backdrop-filter: blur(8px);
@@ -58,10 +50,6 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-.fixed-menu-dark{
-    background: rgba(61, 60, 60, 0.6) !important;
 }
 
 .burger-menu{
@@ -88,9 +76,6 @@ body{
     border-radius: 10px;
 }
 
-.burger-menu-list-dark{
-    background-color: #519872;
-}
 
 .burger-menu-list:nth-child(1){
     top: 0;
@@ -132,10 +117,6 @@ body{
     font-weight: 600;
 }
 
-.left-side-list-items-dark{
-    color: white !important;
-}
-
 #twitter-logo{
     width: 30px;
 }
@@ -161,29 +142,72 @@ body{
     background-color: #0259B1;
 }
 
-.opensea-dark{
-    background-color: #519872 !important;
-    color: #0f0f0f !important;
-}
 
-.opensea-dark:hover{
-    background-color: #2e6648 !important;
-}
-
-.dark-light{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
 .mode-icon{
     width: 50px;
     cursor: pointer;
+}
+
+
+@media (max-width:769px) {
+    .fixed-menu{
+        height: 100%;
+        width: 100%;
+
+        left: -100%;
+        top: 0;
+
+        background: hsla(0, 0.5%, 98%, 0.6);
+        backdrop-filter: blur(5px);
+
+        display: flex;
+        flex-direction: column;
+        
+        transition: all 0.4s;
+    }
+
+    .fixed-menu.active{
+        left: 0;
+    }
+
+    .right-side{
+        display: none;
+    }
+    .left-side-list{
+        flex-direction: column;
+        transform: scale(1.5);
+    }
+
+    .left-side-list-items{
+        margin-top: 10px;
+    }
+
+    .left-side-list-items{
+        margin-right: 0px;
+    }
+
+    .burger-menu{
+        display: block;
+        position: fixed;
+        
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    .burger-menu-outer{
+        position: absolute;
+        width: 100vw;
+        display: flex;
+        
+        justify-content: flex-end;
+    }
+
 }
 /*************************************************
 *********** მთავარი გვერდი **********************
 **************************************************/
 .container-header{
-    
+    position: relative;
     width: 100%;
     height: 100vh;
 }
@@ -191,19 +215,15 @@ body{
 .main-content{
     width: 100%;
     text-align: center;
-    
-    margin-top: 200px;
+    position: relative;
+    margin-top: 100px;
 }
 
 .main-content-txt{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-
-    max-width: 550px;
-    
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .main-content-txt h1{
@@ -256,40 +276,28 @@ body{
     border-radius: 10px;
 }
 
-#nft1{
-    position: relative;
+#nft3{
+    position: absolute;
+    top: 25%;
+    left: 2%;
     z-index: -1;
-
-    display: flex;
-    justify-content: flex-start;
-
-    margin-top: -220px;
-    margin-left: 100px;
-
     transform: rotate(10deg);
+}
 
-    width: 100%;
+#nft1{
+    position: absolute;
+    top: 85%;
+    left: 40%;
+    z-index: -1;
+    transform: rotate(10deg);
 }
 
 #nft2{
-    position: relative;
+    position: absolute;
+    top: 0%;
+    right: 0%;
     z-index: -1;
-    display: flex;
-    justify-content: center;
-    
-    transform: rotate(15deg);
-
-    margin-top: -700px;
-}
-
-#nft3{
-    position: relative;
-    z-index: -1;
-    display: flex;
-    justify-content: end;
-
-
-    transform: rotate(-15deg);
+    transform: rotate(10deg);
 }
 
 #nft4{
@@ -301,16 +309,30 @@ body{
     margin-top: 200px;
     transform: rotate(9deg);
 }
+
+@media (max-width:769px) {
+    #nft3{
+        left: -40%;
+    }
+    #nft1{
+        top: 85%;
+        left: 40%;
+    }
+    
+    #nft2{
+        top: -15%;
+        right: 0%;
+    }
+}
 /*************************************************
 *********** ლურჯი კონტენტი **********************
 **************************************************/
 .container-blue-bg{
     position: relative;
     width: 100%;
-    height: 100vh;
-
+    padding-top: 50px;
+    padding-bottom: 50px;
     display: flex;
-
     background-color: #0259B1;
 }
 
@@ -368,14 +390,6 @@ body{
     background-color: #BBE600;
 }
 
-.get-yours-now-btn-dark{
-    background-color: #519872 !important;
-}
-
-.get-yours-now-btn-dark:hover{
-    background-color: #2e6648 !important;
-}
-
 .blue-bg-inner-right{
     width: 50%;
 
@@ -386,10 +400,31 @@ body{
 }
 
 .blue-bg-inner-right img{
-    width: 60%;
+    width: 40%;
     height: auto;
 
     border-radius: 10px;
+}
+
+@media (max-width:769px) {
+    .blue-bg-inner-left{
+        padding-left: 10px;
+    }
+    .blue-bg-inner-left h1{
+        font-size: 20px;
+    
+        margin-bottom: 20px;
+    }
+    
+    .blue-bg-inner-left p{
+        font-size: 12px;
+    }
+    .get-yours-now-btn{
+        font-size: 14px;
+    }
+    .blue-bg-inner-right img{
+        width: 75%;   
+    }
 }
 
 /*************************************************
@@ -397,9 +432,10 @@ body{
 **************************************************/
 .roadmap-content{
     position: relative;
-
     width: 100%;
-    height: 100vh;
+    padding-top: 50px;
+    height: fit-content;
+    padding-bottom: 50px;
 
     background-color: #DFEEFF;
 
@@ -408,27 +444,18 @@ body{
 
 .roadmap-left{
     width: 50%;
-    height: 100%;
-
     display: flex;
     justify-content: center;
-    
 }
 
 .roadmap-nft{
     width: auto;
     height: 40%;
-
     border-radius: 10px;
 
     position: sticky;
-    top: 175px;
+    top:100px;
     bottom:0;
-
-    margin-top: 50px;
-    margin-bottom: 20px;
-
-    border:1px solid #0f0f0f;
 }
 
 .roadmap-right{
@@ -436,11 +463,10 @@ body{
     height: 100%;
 
     display: flex;
+    gap: 30px;
     flex-direction: column;
     justify-content: center;
 
-    position: relative;
-    z-index: 50;
 }
 
 .roadmap-title{
@@ -451,33 +477,38 @@ body{
 .roadmap-txt{
     font-size: 18px;
 
-    margin-top: 20px;
 }
 
 .roadmap-column{
     display: flex;
     flex-direction: column;
-    
     width: 50%;
-
-    margin-top: 30px;
+    gap: 30px;
 }
 
-.roadmap-column-list-dark{
-    background-color: #519872 !important;
-    color: #0f0f0f !important;
-}
 
 .roadmap-column-list{
-    margin-top: 30px;
-
     background-color: #FFFFFF;
     border-radius: 10px;
-
     padding: 10px 20px;
-
 }
 
+@media (max-width:769px) {
+    .roadmap-nft{
+        height: 15%;
+    }
+    .roadmap-title{
+        font-size: 20px;
+    }
+    
+    .roadmap-txt{
+        font-size: 16px;
+    }
+    
+    .roadmap-column{
+        width: 90%;
+    }
+}
 
 
 /*************************************************
@@ -489,7 +520,8 @@ body{
     display: flex;
 
     width: 100%;
-    height: 100vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
 
     background-color: #fff;
 
@@ -497,7 +529,6 @@ body{
 
 .rarity-left{
     width: 50%;
-    height: 100%;
 
     padding-left: 100px;
 
@@ -519,7 +550,6 @@ body{
 
 .rarity-right{
     width: 50%;
-    height: 100%;
 
     display: flex;
     justify-content: center;
@@ -527,13 +557,25 @@ body{
 }
 
 .rarity-nft{
-    width: 50%;
+    width: 40%;
     height: auto;
 
     border-radius: 10px;
     border: 1px solid black;
 
     transform: rotate(-2deg);
+}
+
+@media (max-width:769px) {
+    .rarity-left{
+        padding-left: 10px;
+    }
+    .rarity-title{
+        font-size: 20px;
+    }
+    .rarity-nft{
+        width: 75%;
+    }
 }
 
 /*************************************************
@@ -543,7 +585,8 @@ body{
 .creator-content{
     position: relative;
     width: 100%;
-    height: 100vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
 
     display: flex;
 
@@ -552,7 +595,6 @@ body{
 
 .creator-right{
     width: 50%;
-    height: 100%;
 
     padding-left: 100px;
 
@@ -562,7 +604,7 @@ body{
 }
 
 .creator-nft{
-    width: 70%;
+    width: 50%;
     height: auto;
 
     border-radius: 10px;
@@ -612,12 +654,21 @@ body{
     background-color: #BBE600;
 }
 
-.creator-btn-link-dark{
-    background-color: #519872 !important;
-}
-
-.creator-btn-link-dark:hover{
-    background-color: #2e6648 !important;
+@media (max-width:769px) {
+    .creator-right{
+        padding-left: 10px;
+    }
+    .creator-nft{
+        width: 75%;
+    }
+    .creator-title{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .creator-btn-link{
+        font-size: 16px;
+    }
 }
 
 /*************************************************
@@ -627,7 +678,8 @@ body{
     position: relative;
 
     width: 100%;
-    height: 100vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
 
     display: flex;
     align-items: center;
@@ -639,17 +691,21 @@ body{
     text-align: center;
 }
 
+.FAQ-inner{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .question{
     background-color: #F1F8FF;
     border-radius: 10px;
     
+    width: 80%;
     padding: 10px 20px;
 }
 
-.question-dark{
-    background-color: #519872 !important;
-    color: #0f0f0f !important;
-}
 
 .question h3{
     margin-bottom: 10px;
@@ -659,6 +715,29 @@ body{
     margin-bottom: 50px;
 }
 
+@media (max-width:769px) {
+    .FAQ-title{
+        font-size: 18px;
+    }
+    .FAQ-inner{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .question{
+        width: 90%;
+    }
+    .question h3{
+        margin-bottom: 0px;
+    }
+    
+    .FAQ-list-items{
+        margin-bottom: 0px;
+    }
+}
+
 /*************************************************
 *********** get-your-nft კონტენტი **********************
 **************************************************/
@@ -666,7 +745,8 @@ body{
     position: relative;
 
     width: 100%;
-    height: 70vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
 
     background-color: #CFF800;
 
@@ -675,7 +755,6 @@ body{
 
 .Get-your-nft-left{
     width: 50%;
-    height: 100%;
 
     display: flex;
     flex-direction: column;
@@ -722,20 +801,10 @@ body{
     background-color: #0259B1;
 }
 
-.Get-your-nft-left-btn-link-dark{
-    background-color: #519872 !important;
-    color: #0f0f0f !important;
-}
-
-.Get-your-nft-left-btn-link-dark:hover{
-    background-color: #2e6648 !important;
-}
-
 .Get-your-nft-right{
     position: relative;
     
     width: 50%;
-    height: 100%;
     
     display: flex;
     justify-content: center;
@@ -753,6 +822,23 @@ body{
     transform: rotate(-2deg);
 }
 
+@media (max-width:769px) {
+    .Get-your-nft-left{
+        padding-left: 10px;
+    }
+    
+    .Get-your-nft-left-title{
+        font-size: 18px;
+        margin-bottom: 0px;
+    } 
+    .Get-your-nft-left-btn-link{
+        font-size: 16px;
+    } 
+    .Get-your-nft-img{
+        width: 75%;
+    }
+}
+
 
 /*************************************************
 *********** footer კონტენტი **********************
@@ -761,7 +847,8 @@ body{
     position: relative;
 
     width: 100%;
-    height: 40vh;
+    padding-top: 50px;
+    padding-bottom: 10px;
 }
 
 .footer-top-inner{
@@ -812,9 +899,6 @@ body{
     font-weight: 500;
 }
 
-.footer-links-dark{
-    color: white !important;
-}
 
 .footer-top-inner-right li{
     list-style: none;
@@ -835,9 +919,27 @@ body{
 .footer-bottom-inner-left{
     width: 70%;
     height: 100%;
+    margin-top: 50px;
 }
 
 .footer-bottom-inner-left a{
     color: #0075EB;
+}
+
+@media (max-width:769px) {
+    .footer{
+        padding-bottom: 5px;
+    }
+    .footer-top-inner-left{
+        padding-left: 10px;
+    }
+    .footer-bottom-inner{
+        padding-left: 10px;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .footer-bottom-inner-left{
+        width: 100%;
+    }
 }
 
