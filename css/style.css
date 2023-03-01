@@ -943,3 +943,17 @@ body{
     }
 }
 
+
+@media (min-width:1500px) {
+    .main-content-txt{
+        padding-top: 350px;
+    }
+
+    .main-content-txt p{
+        font-size: 28px;
+    }
+
+    #opneseayellow{
+        font-size: 24px;
+    }
+}
